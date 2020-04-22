@@ -9,8 +9,8 @@ let testMail = nodemailer.createTestAccount();
 let transporter = nodemailer.createTransport({
    service: 'gmail',
    auth: {
-       user: 'dmytro1332@gmail.com',
-       pass: 'Dkfc.r1332'
+       user: '*HERE U SHOULD WRITE GMAIL NAME LIKE example@gmail.com (but real)*',
+       pass: '*PLACE FOR PASSWORD OF GMAIL MAIL*'
      }
    });
 
