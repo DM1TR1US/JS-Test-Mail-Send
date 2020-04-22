@@ -1,0 +1,136 @@
+html{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.question{
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#qNumber{
+  margin-left: 20px;
+}
+
+.question__block{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 65vw;
+  min-height: 45vh;
+  overflow: auto;
+}
+
+.question__text{
+  margin-top: 2px;
+  font-size: 3.5vw;
+  transition-duration: 0.2s;
+}
+
+.question__part{
+  font-size: 2.5vw;
+  transition-duration: 0.2s;
+}
+
+.question__buttons button{
+  font-size: 2vw;
+  width: 10vw;
+  margin-right: 50px;
+  background-color: white;
+  border: 3px solid black;
+  transition-duration: 0.2s;
+}
+
+.btn__pos:hover{
+  border: 3px solid green;
+  color: green;
+}
+
+.btn__neg:hover{
+  border: 3px solid red;
+  color: red;
+}
+
+#resultsSection{
+  margin-top: 25vh;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.results__title{
+  font-size: 3vw;
+}
+
+.results h2{
+  margin-left: 8vw;
+}
+
+button,
+button:active,
+button:focus,
+input {
+  outline: none;
+
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.toMailForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120%;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
+
+.mailForm{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mailForm input{
+  border: none;
+  border-bottom: 3px solid black;
+  padding-bottom: 0;
+  font-size: 1.2em;
+  width: 100%;
+  height: 5vh;
+  transition-duration: 0.2s;
+}
+
+.mailForm .mailSendBtn{
+  border: none;
+  width: 2vw;
+  background-color: white;
+}
+
+.mailSendBtn:hover{
+  color: green;
+  font-size: 2em;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+input::placeholder{
+  font-size: 1.2em;
+}
+
+@media (wax-width: 1700px) {
+  .question__block{
+    width: 75vw;
+  }
+}

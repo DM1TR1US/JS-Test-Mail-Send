@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ua" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Темперамент тест</title>
+    <link rel="stylesheet" href="css/testpage.css">
+    <script src="data/tests.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section id='questionSection' class="question">
+      <div class="question__block">
+        <div class="navDiv">
+          <h2 id='partPlace' class="question__part">Частина 1/4</h2>
+          <h2 id='qNumber'>228</h2>
+        </div>
+        <h1 id='textPlace' class="question__text">Хто я?</h1>
+      </div>
+
+      <div class="question__buttons">
+        <button class="btn__pos" id="btnYes" type="button" name="button">Так</button>
+        <button class="btn__neg" id="btnNo" type="button" name="button">Ні</button>
+      </div>
+    </section>
+
+    <section id='resultsSection' class="results">
+      <div class="results">
+        <h1 class="results__title">Ваші результати:</h1>
+        <h2>Холерик - <span id='cholerist'>50%</span></h2>
+        <h2>Сангвінік - <span id='sangvinist'>10%</span></h2>
+        <h2>Флегматік - <span id='flegmatist'>10%</span></h2>
+        <h2>Меланхолік - <span id='melanholist'>20%</span></h2>
+      </div>
+
+      <form class="toMailForm" method="post" action="/testpage">
+        <p><b>Отримати результати поштою:</b></p>
+        <div class="mailForm">
+          <input type="email" required placeholder="e-mail@gmail.com" name="mail">
+          <input type="submit" class="mailSendBtn" value="✓">
+
+          <input id='valChol' name="toSendChol" style="display:none" type="text" value="">
+          <input id='valSang' name="toSendSang" style="display:none" type="text" value="">
+          <input id='valFleg' name="toSendFleg" style="display:none" type="text" value="">
+          <input id='valMelan' name="toSendMelan" style="display:none" type="text" value="">
+
+        </div>
+     </form>
+    </section>
+
+  <script src="js/tests.js" charset="utf-8"></script>
+  </body>
+</html>
